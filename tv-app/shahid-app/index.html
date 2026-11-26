@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>شاهد</title>
+<style>
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #1e8c4a;
+        overflow: hidden;
+    }
+    .wrap {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo {
+        color: #ffffff;
+        font-family: sans-serif;
+        font-size: 64px;
+        font-weight: bold;
+        letter-spacing: 4px;
+        opacity: 0.9;
+    }
+</style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="logo">شاهد</div>
+    </div>
+    <script>
+        // Calling the service is what makes webOS start it; the screen itself shows nothing else.
+        try {
+            var bridge = new PalmServiceBridge();
+            bridge.onservicecallback = function() {};
+            bridge.call('luna://com.home.shahid.service/status', '{}');
+        } catch (e) {
+            // no bridge on this firmware; the boot activity still starts the service
+        }
+    </script>
+</body>
+</html>

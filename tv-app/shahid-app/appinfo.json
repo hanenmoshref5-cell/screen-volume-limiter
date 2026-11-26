@@ -1,0 +1,17 @@
+{
+  "id": "com.home.shahid",
+  "version": "1.0.0",
+  "vendor": "Home",
+  "type": "web",
+  "main": "index.html",
+  "title": "شاهد",
+  "icon": "icon.png",
+  "largeIcon": "icon.png",
+  "bgImage": "",
+  "bgColor": "#1e8c4a",
+  "disableBackHistoryAPI": true,
+  "requiredPermissions": [
+    "time.query",
+    "activity.operation"
+  ]
+}

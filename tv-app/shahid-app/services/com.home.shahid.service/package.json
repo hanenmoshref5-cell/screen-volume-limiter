@@ -1,0 +1,11 @@
+{
+  "name": "com.home.shahid.service",
+  "version": "1.0.0",
+  "description": "Background volume-guard service for the Shahid app",
+  "main": "service.js",
+  "scripts": {
+    "test": "echo \"no test specified\" && exit 0"
+  },
+  "author": "",
+  "license": "BSD"
+}

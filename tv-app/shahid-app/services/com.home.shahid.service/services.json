@@ -1,0 +1,9 @@
+{
+  "id": "com.home.shahid.service",
+  "description": "Volume guard background service",
+  "services": [
+    {
+      "name": "com.home.shahid.service"
+    }
+  ]
+}

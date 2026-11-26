@@ -1,0 +1,12 @@
+build/
+.dart_tool/
+.gradle/
+node_modules/
+*.ipk
+*.tar.gz
+tv-app/testsvc/
+tv-app/**/data/
+/guide.html
+/LG-Install-Guide.pdf
+*.log
+local.properties
